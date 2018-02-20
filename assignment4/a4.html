@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+  <title>Recitation 6</title>
+  <link rel="stylesheet" href="a4.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Recitation 6</h1>
+
+  <nav>
+    <ul>
+      <li> <a href = "">Recitation 5</a></li>
+      <li> <a href = "">Recitation 7</a></li>
+    </ul>
+  </nav>
+
+  <h2>Arrays</h2>
+  <p>
+    An array is a data structure which can store primitive data types like floats, ints, strings, chars, and bools.
+Arrays have both a type and a size.
+  <h3>How to Declare Arrays</h3>
+  <code>
+  data_type array_name[declared_size]; <br />
+  bool myBooleans[10];<br />
+  string myStrings[15];<br />
+  int myInts[7];<br />
+  </code>
+
+  <h3>How to Initialize Arrays (Method 1)</h3>
+
+  <code>
+  bool myBooleans[4] = {true, false, true, true};<br />
+</code>
+<p>
+  If you do not declare the size inside the square brackets, the array size will be set to however many entries you provide on the right.<br />
+</p>
+<code>
+  bool myBooleans[] = {true, false, true}; // size = 3<br />
+  </code>
+
+
+
+
+<h3>How to Initialize Arrays (Method 2)</h3>
+<p>
+  You can also initialize elements one by one using a for or while loop:
+</p>
+<code>
+int myInts[10];<br/>
+int i = 0;<br/>
+while (i < 10)<br/>
+{<br/>
+    myInts[i] = i;<br/>
+    i++;<br/>
+}<br/>
+//{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}<br/>
+</code>
+
+<h3> Accessing Elements in Arrays</h3>
+<p>
+You can access elements in arrays using the same syntax you used for strings:
+</p>
+<code>
+string greetings[] = {"hello", "hi", "hey", "what’s up?"}; </br>
+cout << greetings[3] << endl; </br>
+</code>
+
+    <img src="" alt=""/>
+  </p>
+  <hr>
+  <div id="form">
+    <h2>Problem Set</h2>
+
+    <div class = "problem">
+      <h3> Problem 1</h3>
+      <p>
+        Declare a string array of length 10.
+      </p>
+      <label for="answer1">Enter your code here: </label>
+      <input id="answer1" type="text">
+      <button class="submit" id="submit1"> Submit code</button>
+      <div role="alert" id="alert1" class="alert">
+        Sorry, the code submission is not working right now.
+      </div>
+    </div>
+
+    <div class = "problem">
+      <h3> Problem 2</h3>
+      <p>
+        Print the 5th item in this array.
+          </p>
+        <code>
+          int ages = [1, 3, 5, 6, 10];
+        </code>
+
+
+      <label for="answer2">Enter your code here: </label>
+      <input id="answer2" type="text">
+      <button class="submit" id="submit2"> Submit code</button>
+      <div role="alert" id="alert2" class="alert">
+        Sorry, the code submission is not working right now.
+      </div>
+    </div>
+
+    <div class = "problem">
+      <h3> Problem 3</h3>
+      <p>
+      Set the 3rd item in this array to be equal to "bye".
+      </p>
+
+      <code>
+        string farewells[3] = ["goodbye", "see you", ""];
+      </code>
+      <label for="answer3">Enter your code here: </label>
+      <input id="answer3" type="text">
+      <button class="submit" id="submit3"> Submit code</button>
+      <div role="alert" id="alert3" class="alert">
+        Sorry, the code submission is not working right now.
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src = "a4.js"></script>
+</body>
+
+</html>
