@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First GUI</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="phone.css">
+  </head>
+
+  <body>
+
+    <div class="tab_bar" id="tab_bar">
+      <button class="tab" id="tab1"> Dialer </button>
+      <button class="tab" id="tab2"> Contact List </button>
+      <button class="tab" id="tab3"> Add Contact </button>
+    </div>
+
+    <div class="content" id="content">
+      <div class = "screen" id="content_dialer">
+        <h1>Dialer</h1>
+        <p>
+        <input class="dialer" id="dialer"/>
+        <p>
+        <button class ="dialer_number" id="dialer_1">1</button>
+        <button class ="dialer_number" id="dialer_2">2</button>
+        <button class ="dialer_number" id="dialer_3">3</button>
+
+        <p>
+        <button class ="dialer_number" id="dialer_4">4</button>
+        <button class ="dialer_number" id="dialer_5">5</button>
+        <button class ="dialer_number" id="dialer_6">6</button>
+
+
+        <p>
+        <button class ="dialer_number" id="dialer_7">7</button>
+        <button class ="dialer_number" id="dialer_8">8</button>
+        <button class ="dialer_number" id="dialer_9">9</button>
+
+        <p>
+        <button class ="dialer_number" id="dialer_star">*</button>
+        <button class ="dialer_number" id="dialer_0">0</button>
+        <button class ="dialer_number" id="dialer_pound">#</button>
+
+        <p>
+        <button class ="dialer_number" id="dialer_dial">dial</button>
+        <button class ="dialer_number" id="dialer_clear">clear</button>
+      </div>
+
+      <div class = "screen" id="content_list">
+        <h1>Contact List</h1>
+        <p>
+        <button class="contact" id ="contact_1">Robert Drake</button>
+        <button class="contact" id ="contact_1">Emma Frost</button>
+        <button class="contact" id ="contact_1">Robert Frost</button>
+      </div>
+
+      <div class = "screen" id="content_add_contact">
+        <h1>Add Contact</h1>
+        <p>
+        <h3>Name</h3>
+        <p>
+        <input name="add_contact" id="name" placeholder="Jane Smith"/>
+        <p>
+        <h3> Phone number</h3>
+        <p>
+        <input name="add_number" id = "number" placeholder="123-456-7899"/>
+        <p>
+        <h3>  Email address </h3>
+          <p>
+          <input name="add_email" id="email" placeholder="jane.smith@colorado.edu"/>
+          <p>
+        <button class="add_contact">Add Contact</button>
+        <button class="add_contact">Clear</button>
+
+      </div>
+
+      <div class = "screen" id="content_test_gestures">
+        <h1>Test Gestures</h1>
+        <input name="gesture_output" id = "gesture_output" />
+        <div class="gesture_area" id="gesture_area">
+        </div>
+      </div>
+    </div>
+      <a href = "index-large.html">Switch to high contrast mode</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "phone.js"></script>
+    <script src = "dialer.js"></script>
+    <script src = "gestures.js"></script>
+</body>
+
+
+</html>

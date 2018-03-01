@@ -1,0 +1,56 @@
+body {
+  margin: 20px;
+  font-size: 80px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+
+input,
+textarea,
+[contenteditable] {
+  color: #666;
+  caret-color: red;
+}
+
+a {
+  color: gold;
+}
+button {
+    border-color: gold;
+    border-width: thick;
+    padding: 10px 80px;
+    text-align: center;
+    display: inline-block;
+    font-size: 80px;
+    color: white;
+    background-color: black;
+
+
+}
+
+button:hover {
+  color: gold;
+}
+
+button:active {
+  background-color: black;
+}
+
+input {
+  font-size: 80px;
+  color: black;
+}
+
+
+
+#dialer_clear {
+  color: red;
+}
+
+#gesture_area {
+  background-color: purple;
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+}
