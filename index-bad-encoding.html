@@ -1,19 +1,37 @@
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="ISO-8859-1">
 </head>
 
 <body>
-This is a webpage, encoded in ISO-8859-1. I know this because I added this header tag:
+<p>
+This is a webpage, identified with the wrong encoding scheme in the head tag: 
+</p>
+<figure>
+<pre><code>
+&lt;head&gt;
+&lt;meta charset="ISO-8859-1"&gt;
+&lt;/head&gt;
+</code></pre>
+		</figure>
 
-<code>
-	<head>
-	  <meta charset="ISO-8859-1">
-	</head>
-</code>Everything is fine as long as I use characters in the Latin alphabet.
+
+<p>
+Everything is fine as long as I use characters in the Latin alphabet (which is what ISO-8859-1 was designed to encode).
+</p>
 
 But watch what happens when I switch to something else:
 
-ì´ê±° ë­ì—ìš”? ì €ë„ ëª¨ë¥´ê³ , ì—¬ëŸ¬ë¶„ë„ ëª¨ë¥¸ë‹µë‹ˆë‹¤...
-</body>
+¾È³çÇÏ¼¼¿ä. ÀÌ°Ô ¹»±î¿ä?
+<p>
+You have no idea what I wrote! You can try switching through encodings until you find one that will make it work. (This option is only 
+available in some browsers through a "text encodings" menu. 
 
+Now, try going to this webpage, encoded with UTF-8:
+
+<a href = "index-utf8-encoding.html">Page encoded with UTF-8</a>
+</p>
+</body>
+</html>
 
