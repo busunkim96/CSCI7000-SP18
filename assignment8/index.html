@@ -45,54 +45,58 @@
 				<li>Press any key to select the current highlighted button.</li>
 				<li>The selected button changes every second.</li>
 			</ul>
+			
+			<h2>Test</h2>
+			I wanted to test whether there was a difference in performance between horizontal and vertical scans. The provided code had buttons changing from left to right, and I created another button order that would go from top to bottom.
+			
 			<table>
-<tbody>
-<tr>
-<td><strong>&nbsp;equation</strong></td>
-<td><strong>vertical(s)&nbsp;</strong></td>
-<td><strong>vertical # errors&nbsp;</strong></td>
-<td><strong>horizontal (s)&nbsp;</strong></td>
-<td><strong>horizontal # errors&nbsp;</strong></td>
-</tr>
-<tr>
-<td>&nbsp;73 * 72</td>
-<td>40&nbsp;</td>
-<td>0</td>
-<td>60</td>
-<td>0</td>
-</tr>
-<tr>
-<td>203 + 404</td>
-<td>57</td>
-<td>0</td>
-<td>62</td>
-<td>0</td>
-</tr>
-<tr>
-<td>153 * 7 * 9</td>
-<td>54</td>
-<td>0</td>
-<td>90</td>
-<td>1</td>
-</tr>
-<tr>
-<td>5430 - 980</td>
-<td>90</td>
-<td>0</td>
-<td>60</td>
-<td>0</td>
-</tr>
-<tr>
-<td>120 / 6 + 4</td>
-<td>59</td>
-<td>0</td>
-<td>42</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
+			<tbody>
+			<tr>
+			<td><strong>&nbsp;equation</strong></td>
+			<td><strong>vertical(s)&nbsp;</strong></td>
+			<td><strong>vertical # errors&nbsp;</strong></td>
+			<td><strong>horizontal (s)&nbsp;</strong></td>
+			<td><strong>horizontal # errors&nbsp;</strong></td>
+			</tr>
+			<tr>
+			<td>&nbsp;73 * 72</td>
+			<td>40&nbsp;</td>
+			<td>0</td>
+			<td>60</td>
+			<td>0</td>
+			</tr>
+			<tr>
+			<td>203 + 404</td>
+			<td>57</td>
+			<td>0</td>
+			<td>62</td>
+			<td>0</td>
+			</tr>
+			<tr>
+			<td>153 * 7 * 9</td>
+			<td>54</td>
+			<td>0</td>
+			<td>90</td>
+			<td>1</td>
+			</tr>
+			<tr>
+			<td>5430 - 980</td>
+			<td>90</td>
+			<td>0</td>
+			<td>60</td>
+			<td>0</td>
+			</tr>
+			<tr>
+			<td>120 / 6 + 4</td>
+			<td>59</td>
+			<td>0</td>
+			<td>42</td>
+			<td>0</td>
+			</tr>
+			</tbody>
+			</table>
 <p><!-- DivTable.com --></p>
-<p>It looks like the horizontal/vertical layout is better/worse depending on what the specific numbers being entered are, but there is no clear winner at this point. If I decreased the interval I might be able to find out whether one layout or another is more prone to errors, but I think the 1 second interval made errors rare.</p>
+<p>It looks like the horizontal/vertical layout is better/worse depending on what the specific numbers being entered are, but there is no clear winner from the trials. If I decreased the interval I might be able to find out whether one layout or another is more prone to errors, but I think the one second interval made errors rare.</p>
 		</div>
 		<script src="jquery.min.js.download" type="text/javascript"></script>
 		<script src="calculator.js" type="text/javascript"></script>
